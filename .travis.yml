@@ -19,7 +19,7 @@ before_script:
     - git clone --branch=trunk --depth=100 --quiet git://github.com/pear/Console_Getopt.git vendor/console-getopt
     - sh -c "if [ '$INSTALL_PHP_INVOKER' = '1' ]; then git clone --branch=master --depth=100 --quiet git://github.com/sebastianbergmann/php-invoker.git vendor/php-invoker; fi"
 
-script: php -d include_path=vendor/phpunit:vendor/version/src:vendor/php-text-template:vendor/php-token-stream:vendor/php-file-iterator:vendor/php-code-coverage:vendor/phpunit-mock-objects:vendor/php-timer:vendor/php-invoker:vendor/pear-core:vendor/console-getopt:vendor:. vendor/phpunit/phpunit.php 
+script: php -d include_path=vendor/phpunit:vendor/version/src:vendor/SebastianBergmann:vendor/SebastianBergmann/Version:vendor/php-text-template:vendor/php-token-stream:vendor/php-file-iterator:vendor/php-code-coverage:vendor/phpunit-mock-objects:vendor/php-timer:vendor/php-invoker:vendor/pear-core:vendor/console-getopt:vendor:. vendor/phpunit/phpunit.php 
 
 
 notifications:
